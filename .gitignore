@@ -1,0 +1,15 @@
+*.swp
+*~
+.*.haste_cache.*
+.DS_Store
+npm-debug.log
+yarn-error.log
+
+node_modules/
+coverage/
+packages/**/dist/.gitignore
+packages/**/dist/.npmignore
+dist
+node_modules/
+npm-debug.log
+lerna-debug.log

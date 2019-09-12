@@ -1,0 +1,22 @@
+{
+  "packages": ["packages/*", "packages/graphiql-examples/*"],
+  "npmClient": "yarn",
+  "useWorkspaces": true,
+  "version": "independent",
+  "command": {
+    "publish": {
+      "allowBranch": [
+        "master"
+      ],
+      "preDistTag": "next",
+      "distTag": "latest"
+    },
+    "version": {
+      "ignoreChanges": "'__tests__' '**/*.spec.js' '**/*.spec.js' '**/*.spec.ts'",
+      "allowBranch": ["master"],
+      "message": "chore(release): publish %s",
+      "conventionalCommits": true,
+      "createRelease": "github"
+    }
+  }
+}
